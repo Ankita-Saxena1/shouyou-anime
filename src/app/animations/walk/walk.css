@@ -1,0 +1,8 @@
+#cat-canvas {
+  width: 1200px;
+  height: 200px;
+  background: transparent;
+  margin-right: 24px;
+  display: block;
+  align-self: center;
+}
