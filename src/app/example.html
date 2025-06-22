@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cute Chill Green UI</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: url('background.jpg') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    .window {
+      background-color: #dce7c2;
+      width: 700px;
+      margin: 50px auto;
+      border-radius: 12px;
+      padding: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .tabs {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+
+    .tab {
+      background-color: #c4d3a3;
+      padding: 8px 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .nav-icons {
+      display: flex;
+      gap: 8px;
+    }
+
+    .circle {
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background-color: #9aae81;
+    }
+
+    .content {
+      display: flex;
+      gap: 15px;
+    }
+
+    .box {
+      background-color: #f2f6e6;
+      border-radius: 10px;
+      padding: 10px;
+    }
+
+    .img-box {
+      width: 150px;
+      height: 150px;
+      background-color: #b5c89b;
+      background-image: url('your-image.jpg'); /* Replace with your image path */
+      background-size: cover;
+      background-position: center;
+    }
+
+    .text-box {
+      flex-grow: 1;
+    }
+
+    .text-box h4 {
+      margin: 0 0 5px;
+      color: #67884f;
+    }
+
+    .music-box {
+      text-align: center;
+    }
+
+    .music-box img {
+      width: 100px;
+      border-radius: 10px;
+    }
+
+    .controls {
+      margin-top: 10px;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .control-button {
+      background-color: #bcd0a5;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 12px;
+      margin-top: 10px;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <div class="window">
+    <div class="tabs">
+      <div class="tab">Home</div>
+      <div class="tab">Favs</div>
+      <div class="tab">Other</div>
+    </div>
+    <div class="nav">
+      <div class="nav-icons">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+      </div>
+      <input type="text" value="https://noe.uwu.ai" readonly style="flex-grow: 1; margin: 0 10px; padding: 4px; border-radius: 5px; border: none; background: #edf4d5;">
+      <div class="circle"></div>
+    </div>
+    <div class="content">
+      <div class="img-box box"></div>
+      <div class="text-box box">
+        <h4>ABOUT ME</h4>
+        <p>info info info info info info info info info info info info info info info info</p>
+        <h4>RULES</h4>
+        <p>info info info info info info info info info info info info info info info info</p>
+      </div>
+      <div class="music-box box">
+        <img src="music-preview.jpg" alt="Music Preview" />
+        <div>Sleepy Green</div>
+        <div>1:23 / 3:05</div>
+        <div class="controls">
+          <div class="control-button"></div>
+          <div class="control-button"></div>
+          <div class="control-button"></div>
+        </div>
+      </div>
+    </div>
+    <footer>carrd made by curlynemii</footer>
+  </div>
+</body>
+</html>

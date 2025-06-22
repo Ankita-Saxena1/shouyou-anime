@@ -1,0 +1,15 @@
+.about-me-box {
+  background: #f2f6e6;
+  border-radius: 10px;
+  padding: 10px 16px;
+  margin-bottom: 1rem;
+  color: #4e5d3a;
+}
+.about-me-box h4 {
+  margin: 0 0 5px;
+  color: #67884f;
+}
+.about-me-box ul {
+  margin: 0;
+  padding-left: 1.2em;
+}

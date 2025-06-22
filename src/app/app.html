@@ -1,7 +1,19 @@
-<nav class="navbar">
-  <ul class="nav-links">
-    <li><a href="#">Home</a></li>
-    <li><a href="#">Gallery</a></li>
-    <li><a href="#">About</a></li>
-  </ul>
-</nav>
+<div class="main-bg">
+  <main class="main-window">
+    <app-navbar></app-navbar>
+    <div class="main-content">
+      <div class="left-section">
+        <app-profile-pic></app-profile-pic>
+        <div class="vertical-divider"></div>
+        <div class="about-section">
+          <app-about-me></app-about-me>
+        </div>
+      </div>
+      <div class="vertical-divider"></div>
+      <div class="right-section">
+        <app-music-widget></app-music-widget>
+      </div>
+    </div>
+    <router-outlet></router-outlet>
+  </main>
+</div>

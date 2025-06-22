@@ -1,0 +1,35 @@
+.music-box {
+  background: #f2f6e6;
+  border-radius: 10px;
+  padding: 10px 16px;
+  text-align: center;
+  color: #4e5d3a;
+}
+.music-box img {
+  width: 100px;
+  border-radius: 10px;
+  margin-bottom: 0.5rem;
+}
+.controls {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+.control-button {
+  background-color: #bcd0a5;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  color: #67884f;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.control-button:hover {
+  background: #c4d3a3;
+}
