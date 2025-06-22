@@ -1,6 +1,18 @@
 <div class="tabs">
-  <a class="tab" routerLink="/about-me" routerLinkActive="active">About Me</a>
+  <a class="tab" routerLink="/home" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
   <a class="tab" routerLink="/my-projects" routerLinkActive="active">My Projects</a>
   <a class="tab" routerLink="/contact-me" routerLinkActive="active">Contact Me</a>
 </div>
 <router-outlet></router-outlet>
+<!-- Add this inside your navbar, preferably before or after your nav links -->
+<div class="window-controls">
+  <button class="window-btn minimize" aria-label="Minimize">
+    <i class="fas fa-window-minimize"></i>
+  </button>
+  <button class="window-btn maximize" aria-label="Maximize">
+    <i class="fas fa-window-maximize"></i>
+  </button>
+  <button class="window-btn close" aria-label="Close">
+    <i class="fas fa-times"></i>
+  </button>
+</div>
