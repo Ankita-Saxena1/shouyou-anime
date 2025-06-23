@@ -1,1 +1,13 @@
-<p>my-projects works!</p>
+<div class="project-slider">
+  <button class="arrow-btn left" (click)="prevProject()">
+    <div class="arrow-sprite left-arrow"></div>
+  </button>
+  <div class="project-banner">
+    <h3>{{ projects[currentIndex].title }}</h3>
+    <p>{{ projects[currentIndex].description }}</p>
+    <img [src]="projects[currentIndex].imagesUrl" />
+  </div>
+  <button class="arrow-btn right" (click)="nextProject()">
+    <div class="arrow-sprite right-arrow"></div>
+  </button>
+</div>

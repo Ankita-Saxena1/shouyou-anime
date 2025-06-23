@@ -1,0 +1,68 @@
+.project-slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.arrow-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  transition: filter 0.2s;
+}
+
+.arrow-sprite {
+  width: 96px;
+  height: 96px;
+  background-repeat: no-repeat;
+  background-size: 96px 192px; /* 2 frames vertically */
+  filter: brightness(1);
+  transition: filter 0.2s;
+}
+
+/* Left arrow: animate up/down for left movement */
+.left-arrow {
+  background-image: url('/left_arrow.png');
+  animation: left-arrow-anim 0.5s steps(2) infinite;
+}
+
+/* Right arrow: animate up/down for right movement */
+.right-arrow {
+  background-image: url('/right_arrow.png');
+  animation: right-arrow-anim 0.5s steps(2) infinite;
+}
+
+.arrow-btn:hover .arrow-sprite {
+  filter: brightness(1.5) sepia(1) hue-rotate(60deg);
+}
+
+/* Keyframes for 2-frame vertical sprite animation */
+@keyframes left-arrow-anim {
+  0%   { background-position-x: 0px; }
+  100% { background-position-x: -16px; }
+}
+
+@keyframes right-arrow-anim {
+  0%   { background-position-x: 0px; }
+  100% { background-position-x: 16px; }
+}
+
+
+
+.project-banner {
+  background: #f2d9cf;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px #0001;
+  padding: 2rem 2.5rem;
+  min-width: 250px;
+  max-width: 400px;
+  text-align: left;
+  border: 2.5px solid #b5c89b;
+  font-family: "Press Start 2P", system-ui, sans-serif;
+  font-size: x-small;
+}
