@@ -32,7 +32,7 @@ body, html {
   min-height: 500px;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  /* gap: 1.5rem; */
   /* border: 5px solid #67884f; */
   border: none;
   position: relative;
