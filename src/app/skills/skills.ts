@@ -17,7 +17,7 @@ export class Skills {
         { img: '/java.png', title: 'Java', desc: 'ES6+' },
         { img: '/js.png', title: 'Javascript', desc: 'Strong typing' },
         { img: '/typescript.png', title: 'Typescript', desc: 'Strong typing' },
-        { img: '/python.png', title: 'Python', desc: 'Strong typing' },
+        { img: '/python.jpeg', title: 'Python', desc: 'Strong typing' },
       ]
     },
     {
