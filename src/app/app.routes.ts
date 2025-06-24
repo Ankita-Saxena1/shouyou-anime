@@ -5,6 +5,7 @@ import { Routes } from '@angular/router';
 import { Home } from './home/home';
 import { App } from './app';
 import { Blogs } from './blogs/blogs';
+import { Skills } from './skills/skills';
 
 export const routes: Routes = [
   { path: 'home', component: Home},
@@ -12,4 +13,5 @@ export const routes: Routes = [
   { path: 'my-projects', component: MyProjects },
   { path: 'contact-me', component: ContactMe },
   { path: 'blogs', component: Blogs },
+  { path: 'skills', component: Skills },
 ];

@@ -1,6 +1,19 @@
 <div class="main-bg">
-  <main class="main-window">
+  <main class="main-window" [class.minimized]="windowState.minimized">
     <app-navbar></app-navbar>
-    <router-outlet></router-outlet>
+    <router-outlet *ngIf="!windowState.minimized"></router-outlet>
   </main>
+</div>
+<div
+  class="minimized-banner"
+  *ngIf="windowState.minimized"
+  (click)="windowState.maximize()"
+>
+  <span class="minimized-banner-text themed-text">Click to restore window</span>
+  <button class="window-btn minimize" aria-label="Minimize">
+    <i class="fas fa-window-minimize"></i>
+  </button>
+  <button class="window-btn maximize" aria-label="Maximize">
+    <i class="fas fa-window-maximize"></i>
+  </button>
 </div>

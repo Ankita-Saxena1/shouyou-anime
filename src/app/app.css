@@ -33,8 +33,12 @@ body, html {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  border: 5px solid #67884f;
+  /* border: 5px solid #67884f; */
+  border: none;
   position: relative;
+  transition: transform 0.4s cubic-bezier(.68,-0.55,.27,1.55), opacity 0.4s;
+  transform: scale(1);
+  opacity: 1;
 }
 .red-dot-cursor {
   cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"><circle cx="16" cy="16" r="6" fill="red"/></svg>') 16 16, pointer;
@@ -85,9 +89,79 @@ body, html,
 .section-box,
 .navbar,
 .nav-links,
+.minimized-banner
 button,
 input,
 textarea {
   font-family: "Silkscreen", sans-serif !important;
   font-size:medium;
+}
+
+.main-window.minimized {
+  transform: scale(0.2);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.minimized-banner {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  background: #f6f8ee;
+  border-radius: 16px;
+  box-shadow: 0 4px 32px #0003;
+  padding: 1.5rem 2.5rem;
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+  animation: pop-in 0.4s;
+  border-color: 10px solid #67884f;
+}
+@keyframes pop-in {
+  from { transform: translate(-50%, -50%) scale(0.2); opacity: 0; }
+  to   { transform: translate(-50%, -50%) scale(1); opacity: 1; }
+}
+
+.minimized-banner-text,
+.themed-text {
+  font-family: "Press Start 2P", system-ui, sans-serif;
+  font-size: medium;
+  color: #e89e80;
+  font-weight: bold;
+  text-shadow:
+    -1px -1px 0 #000,
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000;
+  letter-spacing: 1px;
+}
+
+.window-btn {
+background: #e6ecd7;
+  border: none;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6b7b5c;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+    border-bottom: 3px solid #6b7b5c;
+  border-top: 3px solid #6b7b5c;
+  border-left: 3px solid #6b7b5c;
+  border-right: 3px solid #6b7b5c;
+}
+
+.window-btn:hover {
+  color: #e89e80;
+}
+
+.minimized-banner i {
+  pointer-events: none;
 }

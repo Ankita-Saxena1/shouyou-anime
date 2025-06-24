@@ -55,14 +55,15 @@
 
 
 .project-banner {
-  background: #f2d9cf;
+  background: #faded3;
   border-radius: 16px;
   box-shadow: 0 4px 16px #0001;
   padding: 2rem 2.5rem;
   min-width: 250px;
   max-width: 400px;
   text-align: left;
-  border: 2.5px solid #b5c89b;
+  color: #4e5d3a;
+  /* border: 10px solid  #e89e80; */
   font-family: "Press Start 2P", system-ui, sans-serif;
   font-size: x-small;
 }

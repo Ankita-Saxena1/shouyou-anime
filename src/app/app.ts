@@ -1,19 +1,19 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { CatStalk } from './animations/cat-stalk/cat-stalk';
 import { Navbar } from './navbar/navbar';
-import { AboutMe } from './about-me/about-me';
-import { ContactMe } from './contact-me/contact-me';
-import { MusicWidget } from './music-widget/music-widget';
-import { ProfilePic } from './profile-pic/profile-pic';
+import { CommonModule } from '@angular/common';
+import { WindowStateService } from '../services/window-state.service';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Navbar, AboutMe, MusicWidget, ProfilePic],
+  imports: [RouterOutlet, Navbar, CommonModule],
   templateUrl: './app.html',
   styleUrl: './app.css',
 })
 export class App {
+
+  constructor(public windowState: WindowStateService) {}
+
   showStalk = false;
   redCursor = false;
 

@@ -1,16 +1,15 @@
 <div class="tabs">
   <a class="tab" routerLink="/home" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
-  <a class="tab" routerLink="/about-me" routerLinkActive="active">Skills</a>
+  <a class="tab" routerLink="/skills" routerLinkActive="active">Skills</a>
   <a class="tab" routerLink="/my-projects" routerLinkActive="active">Projects</a>
   <a class="tab" routerLink="/blogs" routerLinkActive="active">Blog Posts</a>
 </div>
-<router-outlet></router-outlet>
 <!-- Add this inside your navbar, preferably before or after your nav links -->
 <div class="window-controls">
-  <button class="window-btn minimize" aria-label="Minimize">
+  <button class="window-btn minimize" aria-label="Minimize" (click)="minimize()">
     <i class="fas fa-window-minimize"></i>
   </button>
-  <button class="window-btn maximize" aria-label="Maximize">
+  <button class="window-btn maximize" aria-label="Maximize" (click)="maximize()">
     <i class="fas fa-window-maximize"></i>
   </button>
   <button class="window-btn close" aria-label="Close">

@@ -1,0 +1,33 @@
+<div class="skills-folders">
+  <div 
+    class="folder" 
+    *ngFor="let folder of folders; let i = index"
+    (dblclick)="openPopup(i)"
+    tabindex="0"
+  >
+    <img src="/folder.png" alt="Folder" class="folder-img" />
+    <span>{{ folder.name }}</span>
+  </div>
+</div>
+
+<!-- Popup Banner -->
+<div 
+  class="skills-popup" 
+  *ngIf="activePopup !== null"
+  (click)="closePopup()"
+>
+  <div class="skills-popup-content" (click)="$event.stopPropagation()">
+    <button class="close-btn" (click)="closePopup()">&times;</button>
+    <div class="skills-item-heading-text" *ngIf="activePopup !== null">{{ folders[activePopup!].name }}</div>
+    <div class="skills-items">
+      <div class="skills-item" *ngFor="let item of folders[activePopup!]?.items">
+        <img [src]="item.img" alt="{{item.title}}" />
+        <div>
+          <strong>{{item.title}}</strong>
+          <p>{{item.desc}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<router-outlet></router-outlet>
