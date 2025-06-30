@@ -24,7 +24,8 @@
             "styles": [
               "node_modules/@fortawesome/fontawesome-free/css/all.min.css",
               "src/styles.css"
-            ]
+            ],
+            "outputPath": "dist/shouyou-anime"
           },
           "configurations": {
             "production": {
