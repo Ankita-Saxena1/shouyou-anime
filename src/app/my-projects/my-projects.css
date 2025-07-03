@@ -60,10 +60,17 @@
   box-shadow: 0 4px 16px #0001;
   padding: 2rem 2.5rem;
   min-width: 250px;
-  max-width: 400px;
+  max-width: 500px;
   text-align: left;
   color: #4e5d3a;
   /* border: 10px solid  #e89e80; */
   font-family: "Press Start 2P", system-ui, sans-serif;
   font-size: x-small;
+}
+
+.project-banner img {
+  width: 50%;    /* or your preferred size */
+  height: 40%;   /* or auto for aspect ratio */
+  object-fit: cover;
+  margin-bottom: 1rem; /* optional for spacing */
 }

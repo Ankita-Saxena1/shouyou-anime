@@ -14,42 +14,42 @@ export class Skills {
     {
       name: 'Languages',
       items: [
-        { img: '/java.png', title: 'Java', desc: 'ES6+' },
-        { img: '/js.png', title: 'Javascript', desc: 'Strong typing' },
-        { img: '/typescript.png', title: 'Typescript', desc: 'Strong typing' },
-        { img: '/python.jpeg', title: 'Python', desc: 'Strong typing' },
+        { img: '/java.png', title: 'Java', desc: 'Java 7, 8, 11' },
+        { img: '/js.png', title: 'Javascript', desc: '' },
+        { img: '/typescript.png', title: 'Typescript', desc: '' },
+        { img: '/python.jpeg', title: 'Python', desc: '' },
       ]
     },
     {
       name: 'Tools',
       items: [
-        { img: '/camunda.png', title: 'Camunda', desc: 'Version control' },
-        { img: '/flowable.png', title: 'Flowable', desc: 'Version control' },
-        { img: '/ibmbpm.png', title: 'IBM/BPM', desc: 'Version control' },
-        { img: '/git.png', title: 'Git', desc: 'Version control' },
+        { img: '/camunda.png', title: 'Camunda', desc: '' },
+        { img: '/flowable.png', title: 'Flowable', desc: '' },
+        { img: '/ibmbpm.png', title: 'IBM/BPM', desc: '' },
+        { img: '/git.png', title: 'Git', desc: '' },
       ]
     },
     {
       name: 'DevTools',
       items: [
-        { img: '/openshift.png', title: 'Openshift', desc: 'Version control' },
-        { img: '/kubernetes.png', title: 'Kubernetes', desc: 'Version control' },
-        { img: '/docker.png', title: 'Docker', desc: 'Version control' },
+        { img: '/openshift.png', title: 'Openshift', desc: '' },
+        { img: '/kubernetes.png', title: 'Kubernetes', desc: '' },
+        { img: '/docker.png', title: 'Docker', desc: '' },
       ]
     },
     {
       name: 'Frameworks',
       items: [
-        { img: '/.png', title: 'BPMN 2.0', desc: 'Version control' },
-        { img: '/angular.png', title: 'Angular', desc: 'Version control' },
-        { img: '/git.png', title: 'Spring Boot', desc: 'Version control' },
+        { img: '/.png', title: 'BPMN 2.0', desc: '' },
+        { img: '/angular.png', title: 'Angular', desc: '' },
+        { img: '/git.png', title: 'Spring Boot', desc: '' },
       ]
     },
     {
       name: 'Testing',
       items: [
-        { img: '/git.png', title: 'Manual', desc: 'Version control' },
-        { img: '/selenium.png', title: 'Selenium', desc: 'Version control' },
+        { img: '/git.png', title: 'Manual', desc: '' },
+        { img: '/selenium.png', title: 'Selenium', desc: '' },
       ]
     },
   ];
